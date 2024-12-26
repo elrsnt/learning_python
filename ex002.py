@@ -1,3 +1,2 @@
 nome = input('Escreva seu nome:' )
-print('Prazer em conhecer!', format(nome))
-
+print('Prazer em te conhecer, {}!'.format(nome))
