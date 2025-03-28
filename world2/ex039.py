@@ -7,5 +7,8 @@ Faca um programa que leia a data de nascimento de um jovem e informe, de acordo 
 
 Seu programa tambem devera mostrar o tempo que falta ou que passou do prazo. 
 '''
+from datetime import date
 year = input('Digite o ano do seu nascimento: ')
-print('Voce nasceu no ano {} e deve se alistar em.'.format(year))
+today = date.today()
+#print('Voce nasceu no ano {} e deve se alistar em.'.format(year))
+print(today)
