@@ -16,8 +16,12 @@ if age == 18:
     print('Você precisa se alistar neste ano')
 elif age < 18:
     amount = 18 - age
-    print('Ainda faltam {} oara o alistamento'.format(amount))
+    print('Ainda faltam {} para o alistamento'.format(amount))
+    new_year = year + amount
+    print('Seu alistamento será em {}'.format(new_year))
 else:
     amount = age - 18
     age > 18
     print('Vce ja deveria ter se alistado a {} anos'.format(amount))
+    new_year = year - amount
+    print('Seu alistamento foi em {}'.format(new_year))
