@@ -7,3 +7,17 @@ mostre seu status, de acirdi com a tabela abaixo:
 - 30 ate 40: Obsidade
 - AcimA DE 40 obsidade morbida.
 '''
+peso = float(input("Qual o seu peso? "))
+altura = float(input("Qual a sua altura? "))
+imc = peso /  ( altura **2 )
+print("Voce possui o peso {} e a altura {} e possui o IMC de {:.1f}, ".format(peso, altura, imc), end='')
+if imc < 18.5:
+    print('Você está abaixo do peso')
+elif 18.5 <= imc < 25:
+    print('Parabéns, voce esta na faixa de peso ideal')
+elif 25 <= imc < 30:
+    print('Voce esta em Sobreso')
+elif 30 <= imc < 40:
+    print('Você está em Obsidade')
+elif imc >= 40:
+    print('Voce esta em Obesidade Mórbida, cuidado!')
